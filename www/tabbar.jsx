@@ -1,7 +1,7 @@
 var MyPage = React.createClass({
   render: function() {
     return (
-      <OnsPage {...this.props}>
+      <OnsPage>
         <OnsToolbar>
           <div className="center">{this.props.title}</div>
         </OnsToolbar>

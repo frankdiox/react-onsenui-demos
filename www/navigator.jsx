@@ -6,7 +6,6 @@ var App = React.createClass({
         renderScene={(route, navigator) =>
           <OnsPage>
             <OnsToolbar>
-              {route.backButton ? <div className="left"><ons-back-button></ons-back-button></div> : null}
               <div className="center">{route.title}</div>
             </OnsToolbar>
 
@@ -15,7 +14,11 @@ var App = React.createClass({
             <p>
               <ons-button onClick={navigator.pushPage.bind(navigator, {title: 'Another page', content: 'This is another page!', backButton: true})}>Push another page</ons-button>
             </p>
-            { route.backButton ? <p><ons-button onClick={navigator.popPage.bind(navigator)}>Go back</ons-button></p> : null}
+            { route.backButton ? <p>
+              <ons-button onClick={navigator.popPage.bind(navigator)}>
+                Go back
+              </ons-button>
+            </p> : null}
           </OnsPage>
         }
       />
