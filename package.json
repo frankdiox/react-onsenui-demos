@@ -1,0 +1,20 @@
+{
+  "name": "react-onsenui-demos",
+  "version": "0.0.1",
+  "description": "Demos for React Onsen UI extension.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server www -c 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argelius/react-onsenui-demos.git"
+  },
+  "author": "Andreas Argelius <andreas@argeli.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/argelius/react-onsenui-demos/issues"
+  },
+  "homepage": "https://github.com/argelius/react-onsenui-demos#readme"
+}
