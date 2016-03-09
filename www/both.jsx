@@ -64,6 +64,7 @@ var App = React.createClass({
   render: function() {
     return (
       <OnsNavigator
+        animation={'lift'}
         renderScene={this.renderScene}
         initialRoute={MyTabbar}
       />
