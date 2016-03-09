@@ -12,12 +12,12 @@ var App = React.createClass({
             <p>{route.content}</p>
 
             <p>
-              <ons-button onClick={navigator.pushPage.bind(navigator, {title: 'Another page', content: 'This is another page!', backButton: true})}>Push another page</ons-button>
+              <OnsButton onClick={navigator.pushPage.bind(navigator, {title: 'Another page', content: 'This is another page!', backButton: true})}>Push another page</OnsButton>
             </p>
             { route.backButton ? <p>
-              <ons-button onClick={navigator.popPage.bind(navigator)}>
+              <OnsButton onClick={navigator.popPage.bind(navigator)}>
                 Go back
-              </ons-button>
+              </OnsButton>
             </p> : null}
           </OnsPage>
         }
